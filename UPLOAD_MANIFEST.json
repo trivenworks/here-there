@@ -1,0 +1,94 @@
+{
+  "entry": "index.html",
+  "updated": "2026-11-25",
+  "pages": {
+    "home.html": "index.html",
+    "ad-candidates.html": "ad-candidates.html",
+    "alternatives.html": "alternatives.html",
+    "workspace.html": "dashboard.html",
+    "workspace-eda.html": "eda.html",
+    "workspace-insights.html": "insights.html"
+  },
+  "files": {
+    ".env.example": {
+      "bytes": 112,
+      "sha256": "fd3bcda4be321b90e8a940c754bb8ed4cd37c6a595bd0f009f8e3cf3017492b1"
+    },
+    ".gitignore": {
+      "bytes": 104,
+      "sha256": "6609f25d3fb82729a5a3888a8c0811895505627ee014af05aa9fa580723ed149"
+    },
+    ".python-version": {
+      "bytes": 5,
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+    },
+    ".vercelignore": {
+      "bytes": 54,
+      "sha256": "06dedabfa87fd4db8d88cb72e7780109b902d13f5ed9974f7c96bb6a36d2d13b"
+    },
+    "README.md": {
+      "bytes": 1246,
+      "sha256": "14ba2d665bc71973ea96c454cd94f2d3878bd8fb80c20c71d5827d1e13554edb"
+    },
+    "ad-candidates.html": {
+      "bytes": 3429741,
+      "sha256": "2b6168166cb66a22a9810a420da801e14dd802b4e953e5ed0c89a85a486da469"
+    },
+    "alternatives.html": {
+      "bytes": 5122205,
+      "sha256": "0fc78c81c83945ef03d79da16ff1cb2fd582c89de41a5cfc0a1b51b97f787114"
+    },
+    "api/map-config.py": {
+      "bytes": 405,
+      "sha256": "7315c2caeb6cea06cb131a29435573eb4c859b509c329804d9e4d41c114c29ed"
+    },
+    "assets/fonts/LICENSE.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "dashboard.html": {
+      "bytes": 7808053,
+      "sha256": "5da2f057955f275b2e7deb39c7ac0e356b6e7e894efa8de043a9b5b85290efb3"
+    },
+    "eda.html": {
+      "bytes": 6447099,
+      "sha256": "b6c27930ce2e1b5de0b2c1e328dba0e8bf8fb4fee09581820d35ad1e20831a26"
+    },
+    "index.html": {
+      "bytes": 3428966,
+      "sha256": "f350eb5a34899e2fc6846b76036aca97757cbdfda906a28253f896af698865b8"
+    },
+    "insights.html": {
+      "bytes": 3506965,
+      "sha256": "e502bd49345143330f044c31463f5677e411d515560029d442bcfa00bcb1f80d"
+    },
+    "requirements.txt": {
+      "bytes": 65,
+      "sha256": "002e09d287df8c151649fb5c1e2d431d75386be70085992419984fda85ada1f7"
+    },
+    "scripts/build_static.py": {
+      "bytes": 446,
+      "sha256": "e8a8d0ba41f87c264fc756d100d918defdd3854ed45079f3f35a2961ddd24281"
+    },
+    "scripts/dev_server.py": {
+      "bytes": 2124,
+      "sha256": "cea4c9da3f05682589d1f1c4bc4e3e717ff413bcaf197be7dd94076d2ba2ede1"
+    },
+    "server_lib/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "server_lib/http.py": {
+      "bytes": 1202,
+      "sha256": "7a3f4e7d93419d40fd21ba2ea184f617d29b863a8ce4ce4f86bb30976422a03b"
+    },
+    "start.command": {
+      "bytes": 80,
+      "sha256": "9aa97aafb24a89263a90212bdcccd5f57ad8f9abfd0e7db5af963e4e10500043"
+    },
+    "vercel.json": {
+      "bytes": 1077,
+      "sha256": "0199c72c0c01740f7ea9e286c3dc3eeac1d869585be37605e25161582b9fe87d"
+    }
+  }
+}
