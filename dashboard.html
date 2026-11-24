@@ -81,6 +81,17 @@ dialog{max-width:540px;width:calc(100% - 32px);max-height:85dvh;overflow-y:auto;
 @media(max-width:1100px) and (min-width:701px){.modelingPage .workspaceApp{padding-inline:24px}}
 @media(max-width:700px){.modelingPage .workspaceApp{padding-top:16px}}
 
+.modelingPage .analysisMetrics .metric b{font-size:28px}
+@media(min-width:901px){
+  .modelingPage .workspaceGrid{grid-template-columns:minmax(0,2fr) minmax(0,3fr)}
+}
+@media(min-width:901px) and (max-height:780px){
+  .modelingPage .analysisMetrics .metric b{font-size:26px}
+}
+@media(max-width:420px){
+  .modelingPage .analysisMetrics .metric b{font-size:25px}
+}
+
 .topbar .brandLogo{display:block;width:38px;height:32px;object-fit:contain;flex:none}
 .topbar nav.homeTabs{display:flex;align-items:center;gap:4px;flex-wrap:wrap;
   height:auto;min-height:0;width:auto;overflow:visible}
