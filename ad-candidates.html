@@ -104,6 +104,14 @@ body.readingWorkspace{--paper:#f8f7f3;--white:#fff;--ink:#252c29;--muted:#646c66
 @media(max-width:700px){.readingWorkspace main{padding:12px 16px 20px}.readingWorkspace .reportToolbar{gap:8px;flex-wrap:wrap;margin-block-end:12px}.readingWorkspace .reportToolbar .downloadButton{min-height:40px;padding:7px 12px}.readingWorkspace .reportIntro{padding-block:2px 16px}.readingWorkspace .reportIntro h1{font-size:26px}.readingWorkspace .compactLead{font-size:14px}.readingWorkspace .summaryStats{gap:10px 16px;margin-block-start:12px}.readingWorkspace .summaryStat{gap:6px;padding-inline-end:16px}.readingWorkspace .summaryStat b{font-size:20px}.readingWorkspace .summaryStat span{font-size:11px}.readingWorkspace .reportSection{padding:18px}.readingWorkspace .reportSection h2{font-size:22px}.readingWorkspace .reportFigure{padding:10px}.readingWorkspace .reportFigure img{max-block-size:300px}.readingWorkspace #h2 .reportFigure img,.readingWorkspace #h3 .reportFigure img,.readingWorkspace #model .reportFigure img{max-block-size:340px}.readingWorkspace .reportFigure figcaption{font-size:12px}.readingWorkspace #chartDialog{padding:16px}}
 @media print{.readingWorkspace .reportToolbar,.readingWorkspace .figureTools{display:none}.readingWorkspace .evidenceGrid{display:block}.readingWorkspace .reportFigure img{max-height:none}}
 
+.readingWorkspace .reportSection>.sectionTakeaway{font-size:16px;line-height:1.6;color:#203e32;margin-block:0 12px;word-break:keep-all}
+.readingWorkspace .reportSection>p:not(.sectionTakeaway){color:var(--muted);font-size:14px;line-height:1.7}
+.readingWorkspace details.adSources>summary{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:40px;padding:6px 10px;
+  border:1px solid #a6b7ac;border-radius:8px;background:#fff;color:#235c49;font-weight:600;cursor:pointer}
+.readingWorkspace details.adSources>summary::-webkit-details-marker{display:none}
+.readingWorkspace details.adSources>summary::after{content:"+";font-size:17px}
+.readingWorkspace details.adSources[open]>summary::after{content:"−"}
+
 .reportTable th,.reportTable td{word-break:keep-all;overflow-wrap:anywhere}.reportTable.fixedCols{table-layout:fixed;width:100%}
 .plain{margin:10px 0 6px;padding:10px 12px;border-radius:10px;background:#edf3ef;color:#252c29;font-size:14px;line-height:1.65}.plain strong{display:block;font-size:12px;color:#235c49;margin-bottom:2px}.adCase{margin-top:12px}
 .adCampaign,.adDetail dl{display:grid;gap:8px 16px;grid-template-columns:repeat(3,minmax(0,1fr));margin:0 0 14px}
@@ -237,8 +245,6 @@ body.readingWorkspace{--paper:#f8f7f3;--white:#fff;--ink:#252c29;--muted:#646c66
 }
 
 
-.adCase [data-candidate="b"]{--candidate-ink:#235c49;--candidate-tint:#edf3ef;--candidate-fill:#cce0d5}
-.adCase [data-candidate="a"]{--candidate-ink:#a43d30;--candidate-tint:#fdf0ee;--candidate-fill:#f4d0ca}
 .adCase .adCandidate[aria-pressed=true]{border-color:var(--candidate-ink);background:var(--candidate-tint)}
 .adCase .adCandidate strong,.adCase .adGoal{color:var(--candidate-ink)}
 .adMap>svg path[data-candidate]{fill:var(--candidate-tint);stroke:var(--candidate-ink)}
@@ -288,6 +294,29 @@ body.readingWorkspace{--paper:#f8f7f3;--white:#fff;--ink:#252c29;--muted:#646c66
 #adCase .adProfile p{font-size:11px}
 #adCase .adProfile ul{list-style:none;margin:6px 0 0;padding:0;font-size:12px}
 #adCase .adProfile li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:0 4px}
+
+.adCase [data-candidate="a"]{--candidate-ink:#235c49;--candidate-tint:#edf3ef;--candidate-fill:#cce0d5}
+.adCase [data-candidate="b"]{--candidate-ink:#59636f;--candidate-tint:#f0f2f4;--candidate-fill:#d8dde2}
+.adResultBanner{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:16px;align-items:center;
+  margin:0 0 20px;padding:16px 20px;background:#eaf3ee;border:1px solid #cadfd2;border-radius:12px}
+.adResultBanner h2{margin:5px 0 8px;color:#193b2e;font-size:clamp(18px,2.2vw,25px);line-height:1.4;word-break:keep-all}
+.adRecommendBadge{display:inline-block;padding:2px 8px;border-radius:20px;background:#235c49;color:white;font-size:11px;font-weight:700}
+.adCampaignTags{display:flex;flex-wrap:wrap;gap:5px;list-style:none;margin:0;padding:0}
+.adCampaignTags li{padding:3px 8px;border-radius:6px;background:#fff;color:#43564c;font-size:12px}
+.adBannerMetrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.adBannerMetrics div{padding:8px 10px;background:#fff;border-radius:8px;min-width:0}
+.adBannerMetrics strong{display:block;color:#193b2e;font-size:clamp(19px,2.4vw,29px);font-weight:700;line-height:1.25;font-variant-numeric:tabular-nums}
+.adBannerMetrics span{display:block;margin-top:3px;color:#52645a;font-size:11px;line-height:1.45;word-break:keep-all}
+.adCase .adCardMeta{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--candidate-ink)}
+.adCase .adCandidate small{word-break:keep-all}
+#adCase .adConsumptionRow strong{font-size:18px;font-weight:700}
+.adCase .adConsumptionRow{grid-template-columns:24px minmax(0,1fr) 60px}
+.adLocationCompare .reportTable{font-size:12px}
+.adLocationCompare .reportTable :is(th,td){padding:7px 6px}
+.adHome .adComparison .adLocationCompare .tableScroll{margin-block:6px 0}
+@media(max-width:700px){
+  .adResultBanner{grid-template-columns:minmax(0,1fr);gap:10px;padding:12px}
+}
 
 .topbar .brandLogo{display:block;width:38px;height:32px;object-fit:contain;flex:none}
 .topbar nav.homeTabs{display:flex;align-items:center;gap:4px;flex-wrap:wrap;
@@ -354,19 +383,44 @@ body.readingWorkspace{--paper:#f8f7f3;--white:#fff;--ink:#252c29;--muted:#646c66
 <p class="compactLead">20·30대 대상 디저트 팝업을 알릴 위치와 시간대를 비교했습니다.</p></div>
 <div class="adActions"><a class="button" href="#adExplorer">조건 바꿔 찾기</a></div></div></section>
 <div class="adCase" id="adCase">
-<dl class="adCampaign"><div><dt>광고 업종</dt><dd>디저트 브랜드</dd></div><div><dt>목표 고객</dt><dd>20·30대</dd></div><div><dt>캠페인 목적</dt><dd>팝업 방문 유도</dd></div></dl>
-<div class="adComparison"><div class="adComparisonColumn"><section class="adComparisonMetrics">
+<section class="adResultBanner" aria-labelledby="adRecommendation">
+<div class="adResultCopy"><span class="adRecommendBadge">추천</span>
+<h2 id="adRecommendation">A안 연남동(홍대) · 정류장 14015 · 17–21시</h2>
+<ul class="adCampaignTags" aria-label="캠페인 조건"><li>디저트 브랜드</li><li>20·30대 대상</li><li>팝업 방문 유도</li></ul></div>
+<div class="adBannerMetrics"><div><strong>151,338건</strong><span>17–21시 정류장 월 승하차</span></div><div><strong>2,999명</strong><span>같은 시간대 상권 유동 · 시간당 평균</span></div></div>
+</section>
+<div class="adComparison">
+<div class="adComparisonColumn"><section class="adComparisonMetrics">
 <div class="adHeading"><h3>후보 상권 비교</h3>
 <div class="adMetricHelp">
 <button type="button" aria-label="후보 상권 선정 순위" aria-controls="adMetricTooltip" aria-expanded="false">?</button>
 <div class="adMetricTooltip" id="adMetricTooltip" hidden><p class="">서울 전체에서 카페·제과 · 17–21시 조건으로 비교 가능한 894곳 중 연남동(홍대)이 1위, 성신여대가 2위였어요. 연남동은 거래 비중 34위와 승하차 5위의 합 39, 성신여대는 39위와 7위의 합 46예요. 연남동의 거래 비중 순위는 34위이며, 승하차 5위가 종합 순위를 끌어올렸어요.</p></div>
 </div></div>
-<div class="adCandidates" role="group" aria-label="광고 후보 상권"><button class="adCandidate" type="button" aria-controls="adCaseDetail" aria-pressed="false"><strong>A안 · 연남동(홍대) 상권</strong><span class="adGoal">서울 전체 1위 · 우선 답사 후보</span><small>전체 관측 매출액 중 20·30대 <b>58.7%</b></small><small>20·30대 관측 거래 중 카페·제과 <b>34.5%</b></small><small>정류장 <b>14015</b> (홍대입구역)</small></button><button class="adCandidate" type="button" aria-controls="adCaseDetail" aria-pressed="false"><strong>B안 · 성신여대 상권</strong><span class="adGoal">서울 전체 2위 · 카페·제과 비중 강점</span><small>전체 관측 매출액 중 20·30대 <b>45.0%</b></small><small>20·30대 관측 거래 중 카페·제과 <b>40.3%</b></small><small>정류장 <b>08008</b> (돈암사거리.성신여대입구)</small></button></div>
+<div class="adCandidates" role="group" aria-label="광고 후보 상권"><button class="adCandidate" type="button" aria-controls="adCaseDetail" aria-pressed="false"><span class="adCardMeta">서울 전체 1위<span class="adRecommendBadge">추천</span></span><strong>A안 · 연남동(홍대) 상권</strong><small>정류장 14015 · 홍대입구역</small></button><button class="adCandidate" type="button" aria-controls="adCaseDetail" aria-pressed="false"><span class="adCardMeta">서울 전체 2위</span><strong>B안 · 성신여대 상권</strong><small>정류장 08008 · 돈암사거리.성신여대입구</small></button></div>
 <figure class="adConsumptionChart">
 <figcaption>두 상권의 소비 지표 비교</figcaption>
 <div class="adConsumptionMetric"><p>전체 관측 매출액 중 20·30대 비중</p><div class="adConsumptionRow" data-candidate="a"><span>A안</span><span class="adConsumptionTrack" aria-hidden="true"><span style="--bar:58.716974%"></span></span><strong>58.7%</strong></div><div class="adConsumptionRow" data-candidate="b"><span>B안</span><span class="adConsumptionTrack" aria-hidden="true"><span style="--bar:44.967418%"></span></span><strong>45.0%</strong></div></div><div class="adConsumptionMetric"><p>20·30대 거래 중 카페·제과 비중</p><div class="adConsumptionRow" data-candidate="a"><span>A안</span><span class="adConsumptionTrack" aria-hidden="true"><span style="--bar:34.486605%"></span></span><strong>34.5%</strong></div><div class="adConsumptionRow" data-candidate="b"><span>B안</span><span class="adConsumptionTrack" aria-hidden="true"><span style="--bar:40.285239%"></span></span><strong>40.3%</strong></div></div>
 </figure>
 </section>
+<section class="adProfiles">
+<h3>상권별 소비 특성</h3>
+<p class="adBasis">2025년 20·30대 관측 거래 기준 · 소비군 비중 상위 3개</p>
+<div><article class="adProfile" data-candidate="a"><h4>연남동(홍대) 상권</h4><p>청년·저녁 복합소비형</p><ul><li>카페·제과</li><li>음식점</li><li>식료품·편의점</li></ul></article><article class="adProfile" data-candidate="b"><h4>성신여대 상권</h4><p>청년·저녁 복합소비형</p><ul><li>카페·제과</li><li>음식점</li><li>식료품·편의점</li></ul></article></div></section>
+<section class="adSummary">
+<div class="adReason"><h3>현장에서 확인할 점</h3>
+<p>정류장 승하차는 순위에 반영했습니다. 순위 밖 지표인 20·30대 매출 비중과 상권 전체 유동 규모도 연남동이 앞섰습니다.</p>
+<p>두 상권의 유동인구는 모두 17–21시에 가장 많았습니다. 성신여대는 면적당 유동 밀집도와 20·30대 카페·제과 거래 비중이 높아, 보행 동선과 매체 가시성을 함께 비교할 만합니다.</p></div>
+<details class="adSources"><summary>거래 비중에 가중치를 더 주면</summary><p class="">거래 비중 70%, 승하차 30%로 바꿔도 연남동 1위와 성신여대 2위는 유지됐습니다. 3위는 1:1에서 경의선책거리, 7:3에서 성균관대학교였습니다.</p><div class="tableScroll" tabindex="0" role="region" aria-label="업종 거래 비중과 승하차 가중치 비교"><table class="reportTable"><thead><tr><th scope="col">상권</th><th scope="col">1:1 순위</th><th scope="col">7:3 순위</th><th scope="col">7:3 가중 순위 합</th></tr></thead><tbody><tr><td>연남동(홍대)</td><td>1위</td><td>1위</td><td>25.3</td></tr><tr><td>성신여대</td><td>2위</td><td>2위</td><td>29.4</td></tr><tr><td>경의선책거리</td><td>3위</td><td>4위</td><td>35.9</td></tr><tr><td>성균관대학교</td><td>4위</td><td>3위</td><td>31.1</td></tr></tbody></table></div><p class="scope">가중 순위 합은 거래 비중 순위 × 0.7 + 승하차 순위 × 0.3입니다. 합이 작을수록 상위입니다.</p></details>
+</section>
+</div>
+<div class="adComparisonColumn"><section class="adComparisonMap" aria-labelledby="adLocations">
+<h3 id="adLocations">상권 안에서 볼 위치</h3>
+<div class="adLocationGrid"><div class="adMapGroup"><div class="adMap"><svg role="group" aria-label="후보 상권 경계" preserveAspectRatio="xMidYMid meet"></svg><div class="adPins" role="group" aria-label="광고 검토 위치"></div><div class="adStreetMap" hidden></div><span class="adMapLabel" hidden></span></div>
+<p class="adMapNote">2026년 10월 17–21시 승하차 월 합계가 각 상권 경계 안에서 가장 많은 정류장을 골랐어요.</p></div>
+
+<div class="adLocationCompare" id="adCaseDetail">
+<div class="tableScroll" tabindex="0" role="region" aria-label="두 후보의 정류장 이용 규모와 상권 밀집도"><table class="reportTable fixedCols"><colgroup><col style="width:38%"><col style="width:31%"><col style="width:31%"></colgroup><thead><tr><th scope="col">현장 검토 지표</th><th scope="col">A안 · 연남동(홍대)</th><th scope="col">B안 · 성신여대</th></tr></thead><tbody><tr><td>후보 정류장 17–21시 승하차</td><td>151,338건/월</td><td>126,529건/월</td></tr><tr><td>17–21시 유동인구 밀집도</td><td>68.7명/시간/ha</td><td>78.7명/시간/ha</td></tr></tbody></table></div>
+</div></div></section>
 <section class="adComparisonTimes" aria-labelledby="adTimeChartTitle">
 <figure class="adTimeChart" aria-labelledby="adTimeChartTitle">
 <figcaption id="adTimeChartTitle">두 상권은 언제 가장 붐빌까요?</figcaption>
@@ -377,28 +431,12 @@ body.readingWorkspace{--paper:#f8f7f3;--white:#fff;--ink:#252c29;--muted:#646c66
 <div class="adFlowGrid" aria-hidden="true"><span class="adFlowTick" style="--level:0.000000%">0</span><span class="adFlowTick" style="--level:28.571429%">1,000</span><span class="adFlowTick" style="--level:57.142857%">2,000</span><span class="adFlowTick" style="--level:85.714286%">3,000</span></div>
 <div class="adFlowGroups"><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:51.154064%" aria-label="00–06시 연남동(홍대) 상권, 시간당 평균 1,790명"><span class="adFlowValue" aria-hidden="true">1,790명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:23.847175%" aria-label="00–06시 성신여대 상권, 시간당 평균 835명"><span class="adFlowValue" aria-hidden="true">835명/시간</span></button></div><span class="adFlowLabel">00–06시</span></div><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:53.392501%" aria-label="06–11시 연남동(홍대) 상권, 시간당 평균 1,869명"><span class="adFlowValue" aria-hidden="true">1,869명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:28.993190%" aria-label="06–11시 성신여대 상권, 시간당 평균 1,015명"><span class="adFlowValue" aria-hidden="true">1,015명/시간</span></button></div><span class="adFlowLabel">06–11시</span></div><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:73.124879%" aria-label="11–14시 연남동(홍대) 상권, 시간당 평균 2,559명"><span class="adFlowValue" aria-hidden="true">2,559명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:36.336621%" aria-label="11–14시 성신여대 상권, 시간당 평균 1,272명"><span class="adFlowValue" aria-hidden="true">1,272명/시간</span></button></div><span class="adFlowLabel">11–14시</span></div><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:83.698265%" aria-label="14–17시 연남동(홍대) 상권, 시간당 평균 2,929명"><span class="adFlowValue" aria-hidden="true">2,929명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:40.192877%" aria-label="14–17시 성신여대 상권, 시간당 평균 1,407명"><span class="adFlowValue" aria-hidden="true">1,407명/시간</span></button></div><span class="adFlowLabel">14–17시</span></div><div class="adFlowGroup isPeak"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:85.696928%" aria-label="17–21시 연남동(홍대) 상권, 시간당 평균 2,999명"><span class="adFlowValue" aria-hidden="true">2,999명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:44.413679%" aria-label="17–21시 성신여대 상권, 시간당 평균 1,554명"><span class="adFlowValue" aria-hidden="true">1,554명/시간</span></button></div><span class="adFlowLabel">17–21시</span></div><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:63.180248%" aria-label="21–24시 연남동(홍대) 상권, 시간당 평균 2,211명"><span class="adFlowValue" aria-hidden="true">2,211명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:33.739517%" aria-label="21–24시 성신여대 상권, 시간당 평균 1,181명"><span class="adFlowValue" aria-hidden="true">1,181명/시간</span></button></div><span class="adFlowLabel">21–24시</span></div></div>
 </div></figure>
+<details class="adSources"><summary>시간대별 수치와 집계 근거</summary>
 <p class="scope">네 분기 모두 관측된 서울 상권 1,648곳을 합산했을 때, 17–21시 시간당 평균 유동인구는 628,787명으로 6개 구간 중 2위였습니다. 가장 높은 14–17시(632,511명/시간)와 규모가 비슷하고 퇴근 이후가 포함된 저녁 답사를 검토하기 위해 17–21시를 선택했습니다. 이 시간대의 20·30대 유동을 따로 집계한 수치는 아닙니다.</p>
-<div class="tableScroll" tabindex="0" role="region" aria-label="후보 상권 면적과 17–21시 유동 밀집도"><table class="reportTable"><thead><tr><th scope="col">비교 지표</th><th scope="col">A안 · 연남동(홍대) 상권</th><th scope="col">B안 · 성신여대 상권</th></tr></thead><tbody><tr><td>상권 면적</td><td>43.7ha</td><td>19.7ha</td></tr><tr><td>17–21시 유동인구 밀집도</td><td>68.7명/시간/ha</td><td>78.7명/시간/ha</td></tr></tbody></table></div>
-<details class="adSources"><summary>시간대별 수치 보기</summary>
-<div class="tableScroll" tabindex="0" role="region" aria-label="상권 유동인구 시간대 비교"><table class="reportTable"><thead><tr><th scope="col">시간대</th><th scope="col">A안 · 연남동(홍대) 상권</th><th scope="col">B안 · 성신여대 상권</th></tr></thead><tbody><tr><td>00–06시</td><td>1,790명/시간</td><td>835명/시간</td></tr><tr><td>06–11시</td><td>1,869명/시간</td><td>1,015명/시간</td></tr><tr><td>11–14시</td><td>2,559명/시간</td><td>1,272명/시간</td></tr><tr><td>14–17시</td><td>2,929명/시간</td><td>1,407명/시간</td></tr><tr class="adPeak"><td>17–21시 · 최다 유동</td><td>2,999명/시간</td><td>1,554명/시간</td></tr><tr><td>21–24시</td><td>2,211명/시간</td><td>1,181명/시간</td></tr></tbody></table></div>
+<div class="tableScroll" tabindex="0" role="region" aria-label="상권 유동인구 시간대 비교"><table class="reportTable fixedCols"><colgroup><col style="width:32%"><col style="width:34%"><col style="width:34%"></colgroup><thead><tr><th scope="col">시간대</th><th scope="col">A안 · 연남동(홍대)</th><th scope="col">B안 · 성신여대</th></tr></thead><tbody><tr><td>00–06시</td><td>1,790명/시간</td><td>835명/시간</td></tr><tr><td>06–11시</td><td>1,869명/시간</td><td>1,015명/시간</td></tr><tr><td>11–14시</td><td>2,559명/시간</td><td>1,272명/시간</td></tr><tr><td>14–17시</td><td>2,929명/시간</td><td>1,407명/시간</td></tr><tr class="adPeak"><td>17–21시 · 최다 유동</td><td>2,999명/시간</td><td>1,554명/시간</td></tr><tr><td>21–24시</td><td>2,211명/시간</td><td>1,181명/시간</td></tr></tbody></table></div>
 </details>
 </section></div>
-<div class="adComparisonColumn"><section class="adComparisonMap" aria-labelledby="adLocations">
-<h3 id="adLocations">상권 안에서 볼 위치</h3>
-<div class="adLocationGrid"><div class="adMapGroup"><div class="adMap"><svg role="group" aria-label="후보 상권 경계" preserveAspectRatio="xMidYMid meet"></svg><div class="adPins" role="group" aria-label="광고 검토 위치"></div><div class="adStreetMap" hidden></div><span class="adMapLabel" hidden></span></div>
-<p class="adMapNote">2026년 10월 17–21시 승하차 월 합계가 각 상권 경계 안에서 가장 많은 정류장을 골랐어요.</p></div>
-<div class="adDetail" id="adCaseDetail" aria-live="polite"><dl>
-<div><dt>상권</dt><dd data-ad-area></dd></div><div><dt>광고 검토 위치</dt><dd data-ad-place></dd></div><div><dt>상권 유동인구 기준</dt><dd data-ad-time></dd></div>
-</dl><p data-ad-evidence></p></div></div></section>
-<section class="adProfiles">
-<h3>상권별 소비 특성</h3>
-<p class="adBasis">2025년 20·30대 관측 거래 기준 · 소비군 비중 상위 3개</p>
-<div><article class="adProfile" data-candidate="a"><h4>연남동(홍대) 상권</h4><p>청년·저녁 복합소비형</p><ul><li>카페·제과 <strong>34.5%</strong></li><li>음식점 <strong>24.6%</strong></li><li>식료품·편의점 <strong>21.6%</strong></li></ul></article><article class="adProfile" data-candidate="b"><h4>성신여대 상권</h4><p>청년·저녁 복합소비형</p><ul><li>카페·제과 <strong>40.3%</strong></li><li>음식점 <strong>23.3%</strong></li><li>식료품·편의점 <strong>12.1%</strong></li></ul></article></div></section></div>
 </div>
-<section class="adSummary">
-<div class="adReason"><h3>A안을 먼저 보세요. 연남동(홍대) 상권 · 정류장 14015(홍대입구역)</h3><h4>순위에 이미 반영된 근거</h4><p class="">순위에 포함된 승하차는 A안 월 151,338건, B안 월 126,529건입니다. 이 차이는 종합 순위에 이미 반영했습니다.</p><h4>순위 밖 지표로 교차 확인</h4><ul class="adReasons"><li>전체 관측 매출액 중 20·30대 비중이 58.7%로 B안의 45.0%보다 13.7%p 높습니다.</li><li>17–21시 상권 유동인구가 2,999명/시간으로 B안의 1,554명/시간보다 많습니다.</li></ul><p class="scope">성신여대는 20·30대 거래 중 카페·제과 비중이 40.3%로 5.8%p 높고, 17–21시 밀집도도 78.7명/시간/ha로 연남동(68.7명/시간/ha)보다 높습니다. 연남동은 카페·제과 20·30대 거래 건수가 2,566,549건으로 성신여대의 2,260,327건보다 많습니다.</p><p class="">두 상권 모두 하루 중 상권 유동인구가 가장 많은 17–21시에 현장을 확인하세요.</p></div>
-<details class="adSources"><summary>거래 비중에 가중치를 더 주면</summary><p class="">거래 비중 70%, 승하차 30%로 바꿔도 연남동 1위와 성신여대 2위는 유지됐습니다. 3위는 1:1에서 경의선책거리, 7:3에서 성균관대학교였습니다.</p><div class="tableScroll" tabindex="0" role="region" aria-label="업종 거래 비중과 승하차 가중치 비교"><table class="reportTable"><thead><tr><th scope="col">상권</th><th scope="col">1:1 순위</th><th scope="col">7:3 순위</th><th scope="col">7:3 가중 순위 합</th></tr></thead><tbody><tr><td>연남동(홍대)</td><td>1위</td><td>1위</td><td>25.3</td></tr><tr><td>성신여대</td><td>2위</td><td>2위</td><td>29.4</td></tr><tr><td>경의선책거리</td><td>3위</td><td>4위</td><td>35.9</td></tr><tr><td>성균관대학교</td><td>4위</td><td>3위</td><td>31.1</td></tr></tbody></table></div><p class="scope">가중 순위 합은 거래 비중 순위 × 0.7 + 승하차 순위 × 0.3입니다. 합이 작을수록 상위입니다.</p></details>
-</section>
 <details class="adSources"><summary>데이터 출처와 집계 기준</summary>
 <p>서울열린데이터광장「서울시상권분석서비스」(서울특별시) 추정매출(상권)의 2025년 자료에서 각 상권별 4개 분기 모두 관측된 업종을 합산했어요. 20·30대 매출액 비중은 전체 연령의 관측 매출액 대비이고, 카페·제과 비중은 20·30대 전체 관측 거래건수 대비예요.</p>
 <p>서울시 길단위인구(상권)의 4개 분기 시간대별 집계값 합계를 365일과 시간대 길이로 나눴어요. 상권 전체의 시간당 평균이며 시간대별 연령·요일 교차값은 제공되지 않아요.</p>
@@ -618,6 +656,7 @@ window.rankAdAreas = (areas, industry, period) => {
       shapes[i].setAttribute('aria-pressed', String(active));
       shapes[i].classList.toggle('isSelected', active);
     });
+    if (!detail) return;
     detail.querySelector('[data-ad-area]').textContent = 'AB'[index] + '안 · ' + name + ' 상권';
     detail.querySelector('[data-ad-place]').textContent = stop.ars ? '정류장 ' + stop.ars + ' (' + stop.name + ') 주변' : stop.name + ' 정류장 주변';
     detail.querySelector('[data-ad-time]').textContent = start + '–' + end + '시 · 평균 ' + fmt.format(Math.round(period_flow)) + '명/시간';
