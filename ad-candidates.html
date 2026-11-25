@@ -200,7 +200,7 @@ body.readingWorkspace{--paper:#f8f7f3;--white:#fff;--ink:#252c29;--muted:#646c66
 .adHome .adLocationGrid{display:block;margin-top:0;align-items:stretch}
 .adHome .adDetail{margin-top:10px}
 @media(min-width:1000px){
-  .adHome .adComparison{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+  .adHome .adComparison{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 28px}
   .adHome .adCandidate{padding:16px}
 }
 @media(max-width:600px){
@@ -342,6 +342,9 @@ body.readingWorkspace{--paper:#f8f7f3;--white:#fff;--ink:#252c29;--muted:#646c66
  .projectResult,.projectSteps{grid-template-columns:minmax(0,1fr);gap:8px}
 }
 
+.adComparisonDisclosure{min-width:0}
+.adComparisonDisclosure>summary{box-sizing:border-box}
+
 .topbar .brandLogo{display:block;width:38px;height:32px;object-fit:contain;flex:none}
 .topbar nav.homeTabs{display:flex;align-items:center;gap:4px;flex-wrap:wrap;
   height:auto;min-height:0;width:auto;overflow:visible}
@@ -434,7 +437,6 @@ body.readingWorkspace{--paper:#f8f7f3;--white:#fff;--ink:#252c29;--muted:#646c66
 <div class="adReason"><h3>현장에서 확인할 점</h3>
 <p>정류장 승하차는 순위에 반영했습니다. 순위 밖 지표인 20·30대 매출 비중과 상권 전체 유동 규모도 연남동이 앞섰습니다.</p>
 <p>두 상권의 유동인구는 모두 17–21시에 가장 많았습니다. 성신여대는 면적당 유동 밀집도와 20·30대 카페·제과 거래 비중이 높아, 보행 동선과 매체 가시성을 함께 비교할 만합니다.</p></div>
-<details class="adSources"><summary>거래 비중에 가중치를 더 주면</summary><p class="">거래 비중 70%, 승하차 30%로 바꿔도 연남동 1위와 성신여대 2위는 유지됐습니다. 3위는 1:1에서 경의선책거리, 7:3에서 성균관대학교였습니다.</p><div class="tableScroll" tabindex="0" role="region" aria-label="업종 거래 비중과 승하차 가중치 비교"><table class="reportTable"><thead><tr><th scope="col">상권</th><th scope="col">1:1 순위</th><th scope="col">7:3 순위</th><th scope="col">7:3 가중 순위 합</th></tr></thead><tbody><tr><td>연남동(홍대)</td><td>1위</td><td>1위</td><td>25.3</td></tr><tr><td>성신여대</td><td>2위</td><td>2위</td><td>29.4</td></tr><tr><td>경의선책거리</td><td>3위</td><td>4위</td><td>35.9</td></tr><tr><td>성균관대학교</td><td>4위</td><td>3위</td><td>31.1</td></tr></tbody></table></div><p class="scope">가중 순위 합은 거래 비중 순위 × 0.7 + 승하차 순위 × 0.3입니다. 합이 작을수록 상위입니다.</p></details>
 </section>
 </div>
 <div class="adComparisonColumn"><section class="adComparisonMap" aria-labelledby="adLocations">
@@ -455,11 +457,12 @@ body.readingWorkspace{--paper:#f8f7f3;--white:#fff;--ink:#252c29;--muted:#646c66
 <div class="adFlowGrid" aria-hidden="true"><span class="adFlowTick" style="--level:0.000000%">0</span><span class="adFlowTick" style="--level:28.571429%">1,000</span><span class="adFlowTick" style="--level:57.142857%">2,000</span><span class="adFlowTick" style="--level:85.714286%">3,000</span></div>
 <div class="adFlowGroups"><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:51.154064%" aria-label="00–06시 연남동(홍대) 상권, 시간당 평균 1,790명"><span class="adFlowValue" aria-hidden="true">1,790명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:23.847175%" aria-label="00–06시 성신여대 상권, 시간당 평균 835명"><span class="adFlowValue" aria-hidden="true">835명/시간</span></button></div><span class="adFlowLabel">00–06시</span></div><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:53.392501%" aria-label="06–11시 연남동(홍대) 상권, 시간당 평균 1,869명"><span class="adFlowValue" aria-hidden="true">1,869명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:28.993190%" aria-label="06–11시 성신여대 상권, 시간당 평균 1,015명"><span class="adFlowValue" aria-hidden="true">1,015명/시간</span></button></div><span class="adFlowLabel">06–11시</span></div><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:73.124879%" aria-label="11–14시 연남동(홍대) 상권, 시간당 평균 2,559명"><span class="adFlowValue" aria-hidden="true">2,559명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:36.336621%" aria-label="11–14시 성신여대 상권, 시간당 평균 1,272명"><span class="adFlowValue" aria-hidden="true">1,272명/시간</span></button></div><span class="adFlowLabel">11–14시</span></div><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:83.698265%" aria-label="14–17시 연남동(홍대) 상권, 시간당 평균 2,929명"><span class="adFlowValue" aria-hidden="true">2,929명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:40.192877%" aria-label="14–17시 성신여대 상권, 시간당 평균 1,407명"><span class="adFlowValue" aria-hidden="true">1,407명/시간</span></button></div><span class="adFlowLabel">14–17시</span></div><div class="adFlowGroup isPeak"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:85.696928%" aria-label="17–21시 연남동(홍대) 상권, 시간당 평균 2,999명"><span class="adFlowValue" aria-hidden="true">2,999명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:44.413679%" aria-label="17–21시 성신여대 상권, 시간당 평균 1,554명"><span class="adFlowValue" aria-hidden="true">1,554명/시간</span></button></div><span class="adFlowLabel">17–21시</span></div><div class="adFlowGroup"><div class="adFlowBars"><button class="adFlowBar" type="button" data-candidate="a" style="--bar:63.180248%" aria-label="21–24시 연남동(홍대) 상권, 시간당 평균 2,211명"><span class="adFlowValue" aria-hidden="true">2,211명/시간</span></button><button class="adFlowBar" type="button" data-candidate="b" style="--bar:33.739517%" aria-label="21–24시 성신여대 상권, 시간당 평균 1,181명"><span class="adFlowValue" aria-hidden="true">1,181명/시간</span></button></div><span class="adFlowLabel">21–24시</span></div></div>
 </div></figure>
-<details class="adSources"><summary>시간대별 수치와 집계 근거</summary>
+</section></div>
+<details class="adSources adComparisonDisclosure"><summary>거래 비중에 가중치를 더 주면</summary><p class="">거래 비중 70%, 승하차 30%로 바꿔도 연남동 1위와 성신여대 2위는 유지됐습니다. 3위는 1:1에서 경의선책거리, 7:3에서 성균관대학교였습니다.</p><div class="tableScroll" tabindex="0" role="region" aria-label="업종 거래 비중과 승하차 가중치 비교"><table class="reportTable"><thead><tr><th scope="col">상권</th><th scope="col">1:1 순위</th><th scope="col">7:3 순위</th><th scope="col">7:3 가중 순위 합</th></tr></thead><tbody><tr><td>연남동(홍대)</td><td>1위</td><td>1위</td><td>25.3</td></tr><tr><td>성신여대</td><td>2위</td><td>2위</td><td>29.4</td></tr><tr><td>경의선책거리</td><td>3위</td><td>4위</td><td>35.9</td></tr><tr><td>성균관대학교</td><td>4위</td><td>3위</td><td>31.1</td></tr></tbody></table></div><p class="scope">가중 순위 합은 거래 비중 순위 × 0.7 + 승하차 순위 × 0.3입니다. 합이 작을수록 상위입니다.</p></details>
+<details class="adSources adComparisonDisclosure"><summary>시간대별 수치와 집계 근거</summary>
 <p class="scope">네 분기 모두 관측된 서울 상권 1,648곳을 합산했을 때, 17–21시 시간당 평균 유동인구는 628,787명으로 6개 구간 중 2위였습니다. 가장 높은 14–17시(632,511명/시간)와 규모가 비슷하고 퇴근 이후가 포함된 저녁 답사를 검토하기 위해 17–21시를 선택했습니다. 이 시간대의 20·30대 유동을 따로 집계한 수치는 아닙니다.</p>
 <div class="tableScroll" tabindex="0" role="region" aria-label="상권 유동인구 시간대 비교"><table class="reportTable fixedCols"><colgroup><col style="width:32%"><col style="width:34%"><col style="width:34%"></colgroup><thead><tr><th scope="col">시간대</th><th scope="col">A안 · 연남동(홍대)</th><th scope="col">B안 · 성신여대</th></tr></thead><tbody><tr><td>00–06시</td><td>1,790명/시간</td><td>835명/시간</td></tr><tr><td>06–11시</td><td>1,869명/시간</td><td>1,015명/시간</td></tr><tr><td>11–14시</td><td>2,559명/시간</td><td>1,272명/시간</td></tr><tr><td>14–17시</td><td>2,929명/시간</td><td>1,407명/시간</td></tr><tr class="adPeak"><td>17–21시 · 최다 유동</td><td>2,999명/시간</td><td>1,554명/시간</td></tr><tr><td>21–24시</td><td>2,211명/시간</td><td>1,181명/시간</td></tr></tbody></table></div>
 </details>
-</section></div>
 </div>
 <details class="adSources"><summary>데이터 출처와 집계 기준</summary>
 <p>서울열린데이터광장「서울시상권분석서비스」(서울특별시) 추정매출(상권)의 2025년 자료에서 각 상권별 4개 분기 모두 관측된 업종을 합산했어요. 20·30대 매출액 비중은 전체 연령의 관측 매출액 대비이고, 카페·제과 비중은 20·30대 전체 관측 거래건수 대비예요.</p>
