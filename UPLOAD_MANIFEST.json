@@ -31,12 +31,12 @@
       "sha256": "14ba2d665bc71973ea96c454cd94f2d3878bd8fb80c20c71d5827d1e13554edb"
     },
     "ad-candidates.html": {
-      "bytes": 3431972,
-      "sha256": "ed735cbfc30105b72a580596e2606568ff9111f130d5aadfd2d42b2ad3c0d681"
+      "bytes": 3442474,
+      "sha256": "34ac218502f501d1d09872138ee663139deb2823fd6ffc92f331e5943678cc83"
     },
     "alternatives.html": {
-      "bytes": 5129720,
-      "sha256": "cc30d331251d11cca08d1382cfe8b22ad90f8ce7e1183df738108ec50c3d3434"
+      "bytes": 5129924,
+      "sha256": "c1f95c3064a4109671c7088e78a78f3f43754cd7b7bad9fd38d5e8f29c524e89"
     },
     "api/map-config.py": {
       "bytes": 405,
@@ -47,20 +47,20 @@
       "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
     },
     "dashboard.html": {
-      "bytes": 7809377,
-      "sha256": "858f473c28e4477bf6ffa3571fa3063aa2f583f02c706dd882984928d9bd180e"
+      "bytes": 7809491,
+      "sha256": "31e36d2e7025fe704dfcd749aaef86474490f76c0f50cedadfa29cb6b3bbd5ec"
     },
     "eda.html": {
-      "bytes": 6447278,
-      "sha256": "9dbfb048f05249525acc004c0573b13743fe8392d8f7cf0c9aa5b73841cf1772"
+      "bytes": 6447342,
+      "sha256": "215d9e1753994c0df105aaa87a52de07f8faa973e22b9a23d96a2ef93d154733"
     },
     "index.html": {
       "bytes": 3429577,
       "sha256": "e6d807dfc33478b2bfaebe248ca673037a790629acdd9b69c508a3f91776b71f"
     },
     "insights.html": {
-      "bytes": 3506921,
-      "sha256": "6445b0df69688e4dcc0232bc818a9cd45e6f4727ce15bd701b7c5830921ff836"
+      "bytes": 3513624,
+      "sha256": "c36343a2efb89a6d987899836bd4e4e845b78c5f90c68e74a5f352940e8d83f7"
     },
     "requirements.txt": {
       "bytes": 65,
