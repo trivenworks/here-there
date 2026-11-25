@@ -31,8 +31,8 @@
       "sha256": "14ba2d665bc71973ea96c454cd94f2d3878bd8fb80c20c71d5827d1e13554edb"
     },
     "ad-candidates.html": {
-      "bytes": 3448857,
-      "sha256": "4168a03197d9b0746fe8361e6bbeb595089561acafba92d186909892f7638793"
+      "bytes": 3447971,
+      "sha256": "527cb54800b9ffe47beae03974f7ebcfd6336206e40b10d5708f64b1b3ced247"
     },
     "alternatives.html": {
       "bytes": 5136476,
@@ -47,20 +47,20 @@
       "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
     },
     "dashboard.html": {
-      "bytes": 7086395,
-      "sha256": "9fa16756ffac0890e7276e6a1f80efc0fc27d14fc7c20837b793459ce431b19b"
+      "bytes": 7086079,
+      "sha256": "f85d40311997f13607c5cea7707ce32af88dc049e8637680331666656899255c"
     },
     "eda.html": {
-      "bytes": 5290107,
-      "sha256": "6cf8c4410f9cf42f29ddac277fad3e05a679bd674f76597c18fb0d4f7fd990d9"
+      "bytes": 5289399,
+      "sha256": "86a6cd70c220a6fe3383bb7b58b6cebf68c64f983367e8f64e800798706504cb"
     },
     "index.html": {
-      "bytes": 3437642,
-      "sha256": "4efc97acfd2842a85a8ed2d7dfe50128c34a808f9f98406ebe3db02202779437"
+      "bytes": 3436499,
+      "sha256": "4648090d710d2a0cb8b3f0751586ddd2d58b5d1af132b86cffef70c0056b2299"
     },
     "insights.html": {
-      "bytes": 3301744,
-      "sha256": "f268d347d059e4f8717cc74fe47f7a75157ac0e55cc75ae9bb65616592fcc11a"
+      "bytes": 3315078,
+      "sha256": "d39cad49319dd21cdf009f7ac29f93e7ecf1a3485bfdb378e8ff79a3e279188e"
     },
     "requirements.txt": {
       "bytes": 65,
