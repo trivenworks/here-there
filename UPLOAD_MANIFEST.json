@@ -47,20 +47,20 @@
       "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
     },
     "dashboard.html": {
-      "bytes": 7947527,
-      "sha256": "de377383dfcc63f396e6b5bdb1ceb813c58e38e8f4994085cf1c6699e7c1f89f"
+      "bytes": 7086395,
+      "sha256": "9fa16756ffac0890e7276e6a1f80efc0fc27d14fc7c20837b793459ce431b19b"
     },
     "eda.html": {
-      "bytes": 6850436,
-      "sha256": "5032849fbc7ecd39d856d6825a01c15055a270257402aaabc33eb1aedbb7cf02"
+      "bytes": 5290107,
+      "sha256": "6cf8c4410f9cf42f29ddac277fad3e05a679bd674f76597c18fb0d4f7fd990d9"
     },
     "index.html": {
       "bytes": 3437642,
       "sha256": "4efc97acfd2842a85a8ed2d7dfe50128c34a808f9f98406ebe3db02202779437"
     },
     "insights.html": {
-      "bytes": 3120945,
-      "sha256": "7f0a4080b7b31f5240870190eb17bb82ce1563f1fa8879aaf4aa2382fedf01e7"
+      "bytes": 3301744,
+      "sha256": "f268d347d059e4f8717cc74fe47f7a75157ac0e55cc75ae9bb65616592fcc11a"
     },
     "requirements.txt": {
       "bytes": 65,
