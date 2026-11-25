@@ -31,8 +31,8 @@
       "sha256": "14ba2d665bc71973ea96c454cd94f2d3878bd8fb80c20c71d5827d1e13554edb"
     },
     "ad-candidates.html": {
-      "bytes": 3442474,
-      "sha256": "34ac218502f501d1d09872138ee663139deb2823fd6ffc92f331e5943678cc83"
+      "bytes": 3444804,
+      "sha256": "17976ae17e167c1807714ab8977d0b9352bbe98c38fda043b9315118f060ab2a"
     },
     "alternatives.html": {
       "bytes": 5129924,
@@ -59,8 +59,8 @@
       "sha256": "e6d807dfc33478b2bfaebe248ca673037a790629acdd9b69c508a3f91776b71f"
     },
     "insights.html": {
-      "bytes": 3513624,
-      "sha256": "c36343a2efb89a6d987899836bd4e4e845b78c5f90c68e74a5f352940e8d83f7"
+      "bytes": 3538372,
+      "sha256": "211a309752037315554a5463ee4a5dbf892c8026bc477b8d804a39be5d7228fc"
     },
     "requirements.txt": {
       "bytes": 65,
