@@ -35,8 +35,8 @@
       "sha256": "d81399cb44f672cb805948efeee7a22cb48ed0d3281b042fd3f0a3f5dedb160a"
     },
     "alternatives.html": {
-      "bytes": 5135846,
-      "sha256": "c5aad7b01c4c2a24560d87d66d42eec317cad44c3638fea3ee1165c0882ce116"
+      "bytes": 5136476,
+      "sha256": "95c6e6d47a6cb1f2235cdef788118a91db78c7815850ba85de7f6f2a51471f56"
     },
     "api/map-config.py": {
       "bytes": 405,
@@ -47,12 +47,12 @@
       "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
     },
     "dashboard.html": {
-      "bytes": 7936866,
-      "sha256": "15e29950cef7fed3f016ee3e76849a92f69414e96ee6fd411754c473d5206430"
+      "bytes": 7946387,
+      "sha256": "caa8ac6e90d1f595f2db9c026b1a6fcb81ba5401129995cd00b5c15476458994"
     },
     "eda.html": {
-      "bytes": 6448576,
-      "sha256": "44bdc9d259ef140cead9bd67bc7c5dea512eb16f340c107731b47866db5788fa"
+      "bytes": 6850436,
+      "sha256": "5032849fbc7ecd39d856d6825a01c15055a270257402aaabc33eb1aedbb7cf02"
     },
     "index.html": {
       "bytes": 3429577,

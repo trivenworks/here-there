@@ -895,6 +895,18 @@ window.connectSpotNaver = async (host, fallback, onSelect, onReady) => {
     controls[0].value = initial.type;
     selected = initial.code;
   }
+  const params = new URLSearchParams(location.search);
+  const type = params.get('type');
+  if (type !== null) {
+    const normalized = type.replace(/\s+/g, '');
+    const match = Object.entries(data.types).find(([id, name]) => id === type || name.replace(/\s+/g, '') === normalized);
+    if (type === '' || match) controls[0].value = match?.[0] || '';
+  }
+  const period = data.periods.findIndex(range => range.join('-') === params.get('time'));
+  if (period >= 0) controls[1].value = String(period);
+  const industry = data.industries.indexOf(params.get('industry'));
+  if (industry >= 0) controls[2].value = String(industry);
+
   update();
   connectSpotNaver($('spotNaverMap'), map, select, adapter => {
     streetMap = adapter;
